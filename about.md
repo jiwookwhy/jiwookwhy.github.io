@@ -8,7 +8,7 @@ Put some kind of info here.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Put additional info here. 
 
 ### Contact me
 
