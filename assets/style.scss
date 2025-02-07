@@ -11,13 +11,13 @@
 
 /* Style for circular image */
 img.rounded {
-    border-radius: 50%;
-    width: 150px; /* Adjust size as needed */
-    height: 150px; /* Keep it square for a perfect circle */
-    object-fit: cover;
+    border-radius: 50%; /* This makes the image circular */
+    width: 150px; /* Set the width */
+    height: 150px; /* Set the height to be the same as width for a perfect circle */
+    object-fit: cover; /* Ensures the image is cropped to fill the circle */
     border: 5px solid #ddd; /* Optional border around the circle */
     display: block;
-    margin: 0 auto;
+    margin: 0 auto; /* Centers the image */
 }
 
 /* Container for the photo on the right */
