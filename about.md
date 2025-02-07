@@ -4,7 +4,15 @@ title: About
 permalink: /about/
 ---
 
-A simple and elegant theme for Jekyll and GitHub Pages.
+
+# About Me
+
+Welcome to my personal website! I'm excited to share a little about myself here.
+
+<div class="about-photo">
+  <img src="https://raw.githubusercontent.com/jiwookwhy/jiwookwhy.github.io/2e2bf258423baf799e6ecc3276a1e9e5095e40b4/DSCF7404(1).jpg" alt="Profile Picture" class="rounded">
+  <p class="caption">This is me, framed in a circle!</p>
+</div>
 
 ### Features:
 * Mobile-first design ensures this theme performs fastest on mobile while scaling elegantly to desktop-size screens.
@@ -20,16 +28,6 @@ This theme comes in two color variations. The default is set to the `light` them
 | --- | --- |
 | `theme_color: black` | <img width="330" alt="black" src="url"> |
 | `theme_color: red` | <img width="330" alt="red" src="url"> | -->
-
-
-## Installation
-
-Add this line to your Jekyll site's Gemfile:
-
-```ruby
-gem "jekyll-athena"
-```
-
 And add this line to your Jekyll site `config.yml`:
 
 ```yaml
