@@ -8,7 +8,7 @@ Welcome to my personal website! My name is Jiwook - I'm in my fifth year of Fina
 
 <div class="about-photo">
   <img src="https://raw.githubusercontent.com/jiwookwhy/jiwookwhy.github.io/2e2bf258423baf799e6ecc3276a1e9e5095e40b4/DSCF7404(1).jpg" alt="Profile Picture" class="rounded">
-  <p class="caption">Me circa 2023! </p>
+  <p class="caption">Me earlier in 2024! </p>
 </div>
 
 I grew up splitting my childhood between O'hau, Hawaii and San Diego, California. I graduated from UC Berkeley in 2018 with degrees in applied mathematics, statistics, and economics. Following graduation, I worked for 2 years at the Federal Reserve Board's International Finance division. In 2020, I began my PhD program at the Fuqua School of Business. My research interests include derivatives pricing, time-series econometrics, and factor models.
