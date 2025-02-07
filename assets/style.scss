@@ -8,3 +8,33 @@
         "theme-{{ site.theme_color | default: "light" }}.scss"
         // "theme-{{ site.theme_fonts | default: "system" }}.scss"
 ;
+
+/* Style for circular image */
+img.rounded {
+    border-radius: 50%;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Keep it square for a perfect circle */
+    object-fit: cover;
+    border: 5px solid #ddd; /* Optional border around the circle */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Container for the photo on the right */
+.about-photo {
+    display: flex;
+    justify-content: flex-end; /* Align the content to the right */
+    align-items: center; /* Vertically center the image */
+    margin-top: 20px; /* Adds some space at the top */
+    margin-bottom: 20px; /* Adds space below the photo */
+}
+
+/* Caption styling */
+.caption {
+    font-size: 0.9em;
+    color: #666; /* Light gray color */
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 10px; /* Space between the image and the caption */
+    max-width: 200px; /* Prevents the caption from being too wide */
+}
