@@ -11,6 +11,6 @@ Welcome to my personal website! My name is Jiwook - I'm in my fifth year of Fina
   <p class="caption">Me earlier in 2024! </p>
 </div>
 
-I grew up splitting my childhood between O'hau, Hawaii and San Diego, California. I graduated from UC Berkeley in 2018 with degrees in applied mathematics, statistics, and economics. Following graduation, I worked for 2 years at the Federal Reserve Board's International Finance division. In 2020, I began my PhD program at the Fuqua School of Business. My research interests include derivatives pricing, time-series econometrics, and factor models.
+I grew up splitting my childhood between O'hau, Hawaii and San Diego, California. I graduated from UC Berkeley in 2018 with degrees in applied mathematics, statistics, and economics. Following graduation, I worked for 2 years at the Federal Reserve Board's International Finance division after which I started my PhD program at the Fuqua School of Business at Duke Univerisity. My research interests include options/derivatives pricing, factor modeling, and the relationship between market pricing and macroeconomic risk.
 
 
