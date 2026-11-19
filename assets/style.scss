@@ -37,6 +37,20 @@ img.rounded {
     margin-bottom: 0.5em;
 }
 
+/* Collapsible abstracts on the Research page (closed by default) */
+.prose details {
+    margin-bottom: 1em;
+}
+.prose details summary {
+    font-size: 18px;
+    font-style: italic;
+    color: $color-text-accent;
+    cursor: pointer;
+}
+.prose details[open] summary {
+    margin-bottom: 0.5em;
+}
+
 /* Caption styling */
 .caption {
     font-size: 0.9em;
