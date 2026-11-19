@@ -4,33 +4,53 @@ title: Research
 description: Published and working papers
 permalink: /research/
 category_name: research
+nav_order: 2
 ---
 
 <ol>
   <li>
-    <a href="/path-to-paper1">Macroeconomic announcements and variance risk premia</a>
-    <p>This paper comprehensively examines variance risk premia across a variety of asset classes (equities, rates, FX and commodities) by studying straddles written on these assets. I decompose straddles into a volatility risk asset and a jump risk asset to examine the pricing of jumps and expected volatility in the options market around pre-scheduled macroeconomic announcements. Draft in progress. </p>
+    <a href="{{ site.baseurl }}/assets/ssrn-5122949_2026.pdf">The Factor Structure of Short Maturity Options</a>
+    <p class="meta">Working paper (2026) &middot; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5122949">SSRN</a> &middot; <strong>Best Paper Award</strong>, 21st Annual Conference of the Asia-Pacific Association of Derivatives (2025)</p>
+    <ul>
+      <li>Estimated instrumented principal components analysis (IPCA) models with time-varying factor loadings for short-maturity S&amp;P 500, Nasdaq-100, and Russell 2000 options; identified forward-looking variance and skewness as common drivers of option returns.</li>
+      <li>Constructed a five-factor tradable model using the index return and 9- and 30-day variance and skewness factors, achieving lower pricing errors than academic and practitioner benchmarks, especially for options expiring in under 10 days.</li>
+    </ul>
+    <p><em>Abstract.</em> Equity index options with less than one month to maturity have surged in popularity over the past two decades, particularly at the very shortest maturities. For instance, S&amp;P 500 (SPX) options expiring in ten days or fewer (ultra-short maturities) accounted for about 17% of total SPX option trading volume in 1996, compared with roughly 70% in 2023. Despite their contemporary popularity, such contracts remain relatively understudied. This paper examines daily deleveraged returns on short-maturity equity index options written on the S&amp;P 500, Nasdaq 100, and Russell 2000 using factor models with time-varying betas. I estimate two complementary sets of factor models for each index—one featuring latent factors and the other relying on tradable option factors drawn from the literature—and find evidence that both approaches capture common underlying sources of risk associated with forward-looking variance and skewness which I identify from option prices. For ultra-short maturities, incorporating variance and skewness factors exposed to the very near-term 9-day horizon improves pricing performance, especially for ultra-short maturity options, relative to existing academic and practitioner benchmarks. Finally, I develop a reduced-form framework that decomposes expected option returns into contributions from moves in the underlying index and from innovations in forward-looking variance and skewness, documenting large and systematic heterogeneity across option moneyness, maturity, and type.</p>
   </li>
   <li>
-    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5122949">The factor structure of short maturity options</a>
-    <p>Equity index options with less than one month to maturity have surged in popularity over the past two decades, particularly for the very shortest maturities. S&P 500 (SPX) options with fewer than 10 days to maturity represented 17% of all SPX option trading volume in 1996 as compared to around 70% today. Despite this popularity, research on such short maturities remains limited. In this paper, I examine deleveraged daily returns to short maturity contracts written on three major U.S. indices: S&P 500, Nasdaq 100, and Russell 2000. I estimate Instrumental Principal Components Analysis factor models and find evidence for a low-dimensional factor structure that explains over 95% of the variation in the cross-section of option returns. I apply two complementary approaches to interpret the latent factors and conclude they primarily provide compensation for exposure to the forward-looking higher-order moments of these indices, namely risk-neutral variance and skewness. Based on this interpretation, I propose a tradable factor model which outperforms previously proposed models from the literature and industry practice. Using this factor model, I quantify the contributions to the expected return for options with various levels of moneyness, maturity, and type (call/put) from exposure to the underlying index, variance, and skewness. I document substantial contributions to the expected return from exposure to these higher-order moments, with significant variation across moneyness, maturity and type.  </p>
+    <a href="{{ site.baseurl }}/assets/macro_announcements.pdf">The Cross-Asset Announcement Premium: Attention, Risk and Returns</a>
+    <p class="meta">With David A. Hsieh &middot; Working paper (2026)</p>
+    <ul>
+      <li>Documented macroeconomic announcement-linked risk premia across equity, Treasury, currency, and commodity markets, with release-specific premia outside equities&mdash;including gold around FOMC announcements and the dollar against the yen around employment reports.</li>
+      <li>Showed that newspaper-based pre-announcement attention predicts returns across asset classes, while implied volatility predicts realized volatility; developed real-time implementable trading strategies with a backtested S&amp;P 500 per-trade Sharpe ratio of 0.22 versus 0.09 across all announcements.</li>
+    </ul>
+    <p><em>Abstract.</em> We study scheduled macroeconomic announcements across equity, Treasury, currency and commodity markets. Pooled across releases, only equities earn a significant announcement premium. Outside equities, the premium is earned on particular releases: the 10-year Treasury note earns a significant premium on FOMC statements and inflation releases, gold on FOMC statements and GDP releases, and the dollar against the yen on jobs reports. Since 2016, the FOMC premium is significant in gold, the yen and 10-year Treasuries, but not in equities. Sharpe ratios are higher on announcement days for most assets while realized volatility is only modestly higher, pointing to a higher price of risk. Motivated by theories of endogenous attention, we use pre-announcement attention (Fisher, Martineau, &amp; Sheng 2022) as a proxy for the price of risk. Higher attention predicts higher returns around FOMC statements in every market except the yen, and on jobs report days in equities, controlling for the surprise and the pre-announcement run-up in each asset’s implied volatility (IV). The IV run-up more consistently predicts realized volatility than returns. A trading rule with attention thresholds formed only from earlier announcements shows that this signal was usable in real time: high attention announcements earn higher returns and Sharpe ratios per trade in equities, and on FOMC statements in gold and 10-year Treasuries. Intraday jumps account for a larger share of announcement day variance in 10-year Treasuries, the yen and gold, while the additional equity variance is mostly continuous. Straddles and variance swaps provide little evidence of an additional variance risk premium on announcement days.</p>
   </li>
   <li>
-    <a href="https://github.com/jiwookwhy/jiwookwhy.github.io/blob/master/assets/2019_EB.pdf">Better legal institutions: An intertemporal effect on export composition</a>
-    <p> The quality of a country's legal institutions is an important source of comparative advantage, yet few studies look at how this source of comparative advantage develops over time. Using export data from 1996 - 2016, I examine the intertemporal effect of an improvement in a country's legal institutions on its export composition. I do this by exploiting variation in the quality of these institutions prompted by the conditionality of European Union membership. </p>
+    <a href="{{ site.baseurl }}/assets/joint_calibration.pdf">Joint Calibration of the Volatility Surface and Variance Term Structure</a>
+    <p class="meta">Under review at <em>Quantitative Finance</em> (2026) &middot; <a href="https://arxiv.org/abs/2509.08096">arXiv</a> &middot; Code: <a href="https://github.com/jiwookwhy/Joint_calibration">GitHub</a></p>
+    <ul>
+      <li>Developed a penalized calibration framework jointly fitting the implied volatility surface and variance term structure; reduced variance term structure error from 1.3 to 0.8 volatility points with a small loss in surface accuracy on S&amp;P 500 options.</li>
+      <li>Evaluated seven hedging strategies at daily and weekly horizons; found that constrained jump-diffusion calibrations improved quadratic hedges using two options despite fitting option prices less closely.</li>
+    </ul>
+    <p><em>Abstract.</em> I study the calibration of option pricing models with an objective that combines errors on the implied volatility surface and on the variance term structure (VTS), and how the weight on the two trades one fit against the other. I then ask how the calibration affects hedges built from the fitted model. The setting is the stochastic volatility jump-diffusion model of Bates (1996), calibrated to S&amp;P 500 index options on each trading day from 1996 to 2025. Calibrated to option prices alone, the model misses the VTS; however, a small weight on the VTS sharply reduces the error at the cost of a small loss in accuracy on the volatility surface and little change in hedging performance. I fit the model in two ways: unrestricted, with every parameter free, and restricted, with the spot variance pinned to an estimate from high-frequency returns and one jump-size law for all dates, estimated from option prices pooled across dates. This choice matters more for hedging than the weight does, and the closer fit to option prices does not necessarily have the lower hedging errors. The unrestricted fits match the surface more closely, but with rare and implausibly large jumps. Once options enter the quadratic hedge, whose positions depend on the whole fitted jump law, the restricted fits’ hedging errors are as low or lower. The penalty on the VTS reduces the extreme jump sizes implied by the fitted parameters, but it does not explicitly exclude such jump laws.</p>
+  </li>
+  <li>
+    <a href="{{ site.baseurl }}/assets/2019_EB.pdf">Better legal institutions: An intertemporal effect on export composition</a>
+    <p class="meta"><em>Economics Bulletin</em>, 39(4) (2019)</p>
+    <ul>
+      <li>Used 1996&ndash;2016 export data and legal reforms tied to EU accession to show that institutional improvements shift exports toward industries more reliant on strong legal institutions.</li>
+    </ul>
+    <p><em>Abstract.</em> The quality of a country's legal institutions is an important source of comparative advantage, yet few studies look at how this source of comparative advantage develops over time. Using export data from 1996 - 2016, I examine the intertemporal effect of an improvement in a country's legal institutions on its export composition. I do this by exploiting variation in the quality of these institutions prompted by the conditionality of European Union membership.</p>
   </li>
 </ol>
-<!--
 
-Set the front matter:
-title = your page title and link name in the navigation
-permalink = the url for the page, i.e. example.com/my-awesome-category
-category_name = the name of the cateogry you want to use to group posts, you'll need to use the same name on post pages
-
-Save this page in the root directory.
-Use the same name for the filename as the permalink, i.e.
-
-permalink: /my-awesome-category/
-filename: my-awesome-category.html
-
--->
+<h3>Selected Conference Presentations and Research Seminars</h3>
+<ul>
+  <li>Asia-Pacific Association of Derivatives Annual Conference (2025, 2026)</li>
+  <li>Southern Finance Association (2025)</li>
+  <li>Modern Finance Conference (2025)</li>
+  <li>Global Finance Conference (2025)</li>
+  <li>Duke Finance Brownbags (2022, 2024)</li>
+  <li>Federal Reserve Board RA Brownbag (2019)</li>
+</ul>

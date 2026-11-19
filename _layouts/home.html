@@ -11,7 +11,8 @@
 
         <div class="right absolute-lg right-0 top-0">
           <ul class="mt-2 mr-2 mr-lg-3">
-            {% for my_page in site.pages %}
+            {% assign nav_pages = site.pages | where_exp: "p", "p.nav_order" | sort: "nav_order" %}
+            {% for my_page in nav_pages %}
               {% if my_page.title %}
               <li class="inline-block block-lg text-right ml-1 ml-lg-0">
                 <a class="italic no-underline h4 font-smoothing" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
@@ -37,16 +38,20 @@
   <div class="container mx-auto px-2 py-2">
     <ul class="dummy-links-list">
       <li class="mb-4">
-        <a class="text-6xl font-bold underline" href="https://jiwookwhy.github.io/research/">Research</a>
-        <p class="mt-1 text-base text-gray-700">An overview of my working and published research. Papers mostly cover topics related to the pricing of risks in the derivatives market, specifically risks associated with higher-order moments or macroeconomic event risk. Within the derivatives market, I focus on the nascent but wildly popular market for short maturity options (weeklies) across a variety of asset classes.  </p>
+        <a class="text-6xl font-bold underline" href="{{ site.baseurl }}/about/">About</a>
+        <p class="mt-1 text-base text-gray-700">My current work at Bank of America and my PhD research at Duke.</p>
       </li>
       <li class="mb-4">
-        <a class="text-6xl font-bold underline" href="https://jiwookwhy.github.io/projects/">Projects</a>
-        <p class="mt-1 text-base text-gray-700">A look at some of the projects germane to my coursework and research. Projects include reinforcement learning-based methods applied to problems in static hedging and the replication and pricing of exotic derivative payoffs. </p>
+        <a class="text-6xl font-bold underline" href="{{ site.baseurl }}/research/">Research</a>
+        <p class="mt-1 text-base text-gray-700">My working papers and publications. Most of my research is about how risk gets priced in options markets: the factor structure of very short-dated options (which won Best Paper at APAD 2025), risk premia around macroeconomic announcements across equities, rates, currencies, and commodities, and how to jointly calibrate and hedge option pricing models.</p>
       </li>
       <li class="mb-4">
-        <a class="text-6xl font-bold underline" href="http://example.com/page3">Teaching</a>
-        <p class="mt-1 text-base text-gray-700">My teaching assistent career: provides an summary of the courses I've helped teach over the past 4 years @ the Fuqua School of Business for the daytime MBA program and MQM (Master of Quantitative Management). Courses cover a variety of topics such as derivatives pricing, asset allocation, factor modeling, and statistical simulation of market models. </p>
+        <a class="text-6xl font-bold underline" href="{{ site.baseurl }}/projects/">Projects</a>
+        <p class="mt-1 text-base text-gray-700">Code that goes with my research, including jointcal, a Python library for option pricing, calibration, and hedging, and a calibrator for 0DTE options. There's also an ICU decision-support tool built with reinforcement learning from my computer science coursework.</p>
+      </li>
+      <li class="mb-4">
+        <a class="text-6xl font-bold underline" href="{{ site.baseurl }}/teaching/">Teaching</a>
+        <p class="mt-1 text-base text-gray-700">Courses I helped teach at Fuqua for the Daytime MBA and Master of Quantitative Management (MQM) programs, covering derivatives, fixed income, risk management, and finance data analytics.</p>
       </li>
     </ul>
   </div>

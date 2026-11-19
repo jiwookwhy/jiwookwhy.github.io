@@ -29,6 +29,14 @@ img.rounded {
     margin-bottom: 20px; /* Adds space below the photo */
 }
 
+/* Line under a paper or project title (venue, year, award, tools) */
+.prose p.meta {
+    font-size: 18px;
+    font-style: italic;
+    color: $color-text-accent;
+    margin-bottom: 0.5em;
+}
+
 /* Caption styling */
 .caption {
     font-size: 0.9em;
