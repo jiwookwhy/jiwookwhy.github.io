@@ -11,18 +11,19 @@ nav_order: 3
   <li>
     <a href="https://github.com/jiwookwhy/Joint_calibration">jointcal: Option Pricing, Calibration, and Hedging</a>
     <p class="meta">Python</p>
-    <p>jointcal fits option pricing models to the implied volatility surface and the variance term structure jointly, and tests how the fitted models hedge. It is the companion library to <a href="{{ site.baseurl }}/research/">Joint Calibration of the Volatility Surface and Variance Term Structure</a>.</p>
+    <p>jointcal calibrates option pricing models to the implied volatility surface and the variance term structure jointly, as in my paper <a href="{{ site.baseurl }}/research/">Joint Calibration of the Volatility Surface and Variance Term Structure</a>. It also prices options, computes Greeks, and sets hedges.</p>
     <ul>
-      <li>Joint calibration of implied volatility surfaces and variance term structures for the Bates, Heston, Merton, and Black&ndash;Scholes models.</li>
-      <li>Modular design: adding a model requires only its characteristic function and parameter specification.</li>
-      <li>Vectorized COS Fourier pricing and Greeks.</li>
-      <li>Jump-aware quadratic hedging with multiple options and Tikhonov regularization.</li>
+      <li>Models: Bates, Heston, Merton, and Black&ndash;Scholes are built in. A new model needs only its parameters and characteristic function; the example notebook adds the double Heston model in a few lines.</li>
+      <li>Calibration: one weight trades off the fit to the volatility surface against the fit to the variance term structure. Restricted fits can pin parameters such as the spot variance or the jump-size law.</li>
+      <li>Pricing and Greeks: COS Fourier pricing, with delta, gamma, vega, vanna, volga, and theta.</li>
+      <li>Hedging: Black&ndash;Scholes and model deltas, and a quadratic hedge that minimizes risk-neutral variance, jumps included, using the underlying and any options, with Tikhonov regularization.</li>
+      <li>A test suite, and an example notebook that walks through one trading day from start to finish.</li>
     </ul>
   </li>
   <li>
-    <a href="https://github.com/jiwookwhy/zero_DTEs">0DTE Option Pricing Calibrator</a>
+    <a href="https://github.com/jiwookwhy/BFR_edgeworth">0DTE Option Pricing Calibrator</a>
     <p class="meta">NumPy, SciPy</p>
-    <p>A Python package for pricing very short-dated options with the Bandi&ndash;Fusari&ndash;Ren&ograve; Edgeworth-expansion model, calibrated jointly to the implied volatility surface and variance term structure. Applied to 30 years of SPX options, covering approximately 13 million quotes.</p>
+    <p>A Python implementation of the 0DTE option pricing model of Bandi, Fusari, and Ren&ograve; (forthcoming, <em>Journal of Finance</em>): option pricing, daily calibration with an optional variance term structure penalty, the model's variance term structure, and simulation. Includes the model's parameters fitted to S&amp;P 500 options from 1996 to 2025, about 19,500 fits in all.</p>
   </li>
   <li>
     <a href="https://github.com/jiwookwhy/mimic_ML">VentML: ICU Decision Support</a>
